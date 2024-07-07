@@ -14,7 +14,7 @@ const uint16_t colorsText[] =
   matrix.Color(204, 204, 0),
   matrix.Color(0, 255, 255),
   matrix.Color(255, 10, 127),
-  matrix.Color(127, 0, 255),
+  matrix.Color(0, 0, 255),
   matrix.Color(0, 255, 0),
   matrix.Color(255, 99, 255)
 };

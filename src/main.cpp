@@ -9,6 +9,6 @@ void setup()
 void loop()
 {
    //NTN_PRINT_START();
-   NTN_APP_Handler();
+   NTN_APP_Handler(); 
    NTN_System_Handler();
 }
