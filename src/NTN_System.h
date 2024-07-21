@@ -9,6 +9,7 @@
     #include <RTClib.h>
     #include "NTN_Printf.h"
     #include "NTN_DS3231_Clock.h"
+    #include "NTN_PORTING.h"
     void NTN_System_Int();
     void NTN_System_Handler();
 #endif

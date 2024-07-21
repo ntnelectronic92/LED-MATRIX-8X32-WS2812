@@ -1,0 +1,9 @@
+@startuml
+participant main.cpp as main
+participant rectangle.cpp as rec
+participant circle.cpp as cir
+main--> rec: hello
+rec--> cir: see you again
+
+
+@enduml

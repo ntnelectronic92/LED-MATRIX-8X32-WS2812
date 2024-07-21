@@ -9,6 +9,7 @@
     #include <RTClib.h>
     #include "NTN_Matrix_Ws2812.h"
     #include "NTN_Printf.h"
+    #include "NTN_PORTING.h"
     void NTN_APP_Int();
     void NTN_APP_Handler();
 #endif

@@ -71,5 +71,7 @@ void NTN_Matrix_Ws2812_RollingText()
 }
 void NTN_Matrix_Ws2812_Handle(void)
 {
+#if(DS3231_DEVICE == ON)
     NTN_Matrix_Ws2812_DisplayClock();
+#endif
 }

@@ -6,6 +6,6 @@ void NTN_APP_Int()
 }
 void NTN_APP_Handler()
 {
-   // NTN_PRINT_START();
+    NTN_PRINT_START();
     NTN_Matrix_Ws2812_Handle();
 }
