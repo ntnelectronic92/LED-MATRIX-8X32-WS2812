@@ -8,15 +8,14 @@ Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(COLUMNS, ROWS, PIN_DATA,
 int startView = 0;
 int indexColor = 0;
 char charArray[100];
-const uint16_t colorsText[] =
+#define MAX_COLOR  5
+const uint16_t colorsText[MAX_COLOR] =
 {
-  matrix.Color(204, 0, 204),
-  matrix.Color(204, 204, 0),
-  matrix.Color(0, 255, 255),
-  matrix.Color(255, 10, 127),
-  matrix.Color(0, 0, 255),
-  matrix.Color(0, 255, 0),
-  matrix.Color(255, 99, 255)
+   matrix.Color(204, 122, 0),
+   matrix.Color(179, 0, 179),
+   matrix.Color(0, 0, 171),
+   matrix.Color(0, 171, 0),
+   matrix.Color(171, 0, 0)
 };
 void NTN_Matrix_Ws2812_DisplayClock()
 {
@@ -29,7 +28,8 @@ void NTN_Matrix_Ws2812_DisplayClock()
     if(lastMinute!= timeGet.minutes)
     {
        lastMinute = timeGet.minutes;
-       if (++indexColor >= 8) indexColor = 0;
+        if (++indexColor >= MAX_COLOR) 
+       indexColor = 0;
        matrix.setTextColor(colorsText[indexColor]);
     }
     // Start Display.
@@ -64,9 +64,10 @@ void NTN_Matrix_Ws2812_RollingText()
     matrix.print(stringView);
     if (--startView < lengthTextForViewScroll)
     {
-    startView = matrix.width();
-    if (++indexColor >= 8) indexColor = 0;
-    matrix.setTextColor(colorsText[indexColor]);
+      startView = matrix.width();
+       if (++indexColor >= MAX_COLOR) 
+      indexColor = 0;
+      matrix.setTextColor(colorsText[indexColor]);
     }
 }
 void NTN_Matrix_Ws2812_Handle(void)
