@@ -39,7 +39,7 @@
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [
     "c:/000_Todo_List/LED-MATRIX-8X32-WS2812/include",
-    "c:/000_Todo_List/LED-MATRIX-8X32-WS2812/src",
+    "C:/Users/Admin/Desktop/LED-MATRIX-8X32-WS2812/src",
     "c:/000_Todo_List/LED-MATRIX-8X32-WS2812/lib/Preferences/src",
     "C:/Users/Admin/.platformio/packages/framework-arduinoespressif8266/libraries/LittleFS/src",
     "C:/Users/Admin/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src",
